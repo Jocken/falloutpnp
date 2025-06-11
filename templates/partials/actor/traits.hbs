@@ -4,7 +4,7 @@
     <th colspan="2"><p>Trait</p></th>
     <th></th>
   </tr>
-  {{#ifEquals item.type "trait"}}
+  {{#ifEquals item.name "EMPTY_TRAIT_NAME"}}
   {{#each items as |item|}}
     <tr>
       <td>
@@ -17,7 +17,7 @@
             name="item.name"
             data-trait-id="{{item._id}}"
             data-update-trait="name"
-            value="{{ifThen (eq item.name 'EMPTY_ITEM_NAME') '' item.name}}"
+            value="{{ifThen (eq item.name 'EMPTY_TRAIT_NAME') '' item.name}}"
           />
         </div>
       </td>

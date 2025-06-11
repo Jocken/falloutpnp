@@ -47,7 +47,7 @@
     <th><p>Qty</p></th>
     <th></th>
   </tr>
-  {{#ifNotEqual item.type "trait"}}
+  {{#ifNotEqual item.name "EMPTY_TRAIT_NAME"}}
   {{#each items as |item|}}
     <tr>
       <td>
