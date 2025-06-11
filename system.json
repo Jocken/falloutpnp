@@ -1,0 +1,46 @@
+{
+  "id": "falloutpnp",
+  "title": "Fallout PnP 2.0",
+  "description": "From Ukraine with love. Fallout PnP created by Jason Mical.",
+  "license": "LICENSE.md",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "Valasky Fedir Fadieiev"
+    },
+    {
+      "name": "Martin Bahniuk"
+    },
+    {
+      "name": "Jocken"
+    }
+  ],
+  "esmodules": [
+    "main.js"
+  ],
+  "styles": [
+    "styles.css"
+  ],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+interface GridData {
+    distance: 1;
+    units: "m";
+},
+  "primaryTokenAttribute": "hp",
+  "url": "https://github.com/FedorFadeev/falloutpnp",
+  "manifest": "https://raw.githubusercontent.com/Jocken/falloutpnp/main/system.json",
+  "download": "https://github.com/Jocken/falloutpnp/archive/refs/heads/main.zip",
+  "initiative": "@sequence"
+}
