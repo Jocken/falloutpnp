@@ -4,10 +4,11 @@
     <th colspan="2"><p>Trait</p></th>
     <th></th>
   </tr>
+  {{#if item.type == 'trait'}}
   {{#each items as |item|}}
     <tr>
       <td>
-        <div class="data-field clickable-open" data-open-item="{{item._id}}"></div>
+        <div class="data-field clickable-open" data-open-trait="{{item._id}}"></div>
       </td>
       <td style="width: 100%;">
         <div class="input-field">
@@ -25,6 +26,7 @@
       </td>
     </tr>
   {{/each}}
+  {{/if}}
   <tr>
     <td colspan="5">
       <div class="data-field clickable-block" style="text-align: center;" data-create-trait="trait"></div>
