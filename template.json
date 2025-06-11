@@ -306,7 +306,8 @@
     "types": [
       "weapon",
       "armor",
-      "custom"
+      "custom",
+      "trait"
     ],
     "templates": {
       "common": {
@@ -355,6 +356,11 @@
       "radiationResistanceBonus": 0
     },
     "custom": {
+      "templates": [
+        "common"
+      ]
+    },
+    "trait": {
       "templates": [
         "common"
       ]
