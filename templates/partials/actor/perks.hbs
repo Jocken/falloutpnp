@@ -1,0 +1,31 @@
+<h2>Perks</h2>
+<table>
+  {{#each this.actor.itemTypes.perk as |item|}}
+    <tr>
+
+      <td>
+        <div class="data-field clickable-open" data-open-item="{{item._id}}"></div>
+      </td>
+      <td style="width: 100%;">
+        <div class="input-field">
+          <input
+            type="text"
+            name="item.name"
+            data-trait-id="{{item._id}}"
+            data-update-item="name"
+            value="{{ifThen (eq item.name 'EMPTY_ITEM_NAME') '' item.name}}"
+          />
+        </div>
+      </td>
+
+      <td>
+        <div class="data-field clickable-delete" data-delete-item="{{item._id}}"></div>
+      </td>
+    </tr>
+  {{/each}}
+  <!-- <tr>
+    <td colspan="5">
+      <div class="data-field clickable-block" style="text-align: center;" data-create-item="trait"></div>
+    </td>
+  </tr> -->
+</table>

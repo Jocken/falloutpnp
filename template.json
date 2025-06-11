@@ -307,7 +307,8 @@
       "weapon",
       "armor",
       "custom",
-      "trait"
+      "trait",
+      "perk"
     ],
     "templates": {
       "common": {
@@ -361,6 +362,11 @@
       ]
     },
     "trait": {
+      "templates": [
+        "common"
+      ]
+    }
+    "perk": {
       "templates": [
         "common"
       ]
