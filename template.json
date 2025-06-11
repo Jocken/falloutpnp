@@ -306,8 +306,7 @@
     "types": [
       "weapon",
       "armor",
-      "custom",
-      "trait"
+      "custom"
     ],
     "templates": {
       "common": {
@@ -360,6 +359,5 @@
         "common"
       ]
     }
-  }
   }
 }
