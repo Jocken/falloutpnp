@@ -337,7 +337,7 @@
         "condition"
       ],
       "armorClass": 5,
-      "damareThreshold": {
+      "damageThreshold": {
         "normal": 0,
         "laser": 0,
         "fire": 0,
@@ -356,11 +356,6 @@
       "radiationResistanceBonus": 0
     },
     "custom": {
-      "templates": [
-        "common"
-      ]
-    },
-    "trait": {
       "templates": [
         "common"
       ]
