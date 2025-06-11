@@ -4,9 +4,7 @@
     <th colspan="2"><p>Trait</p></th>
     <th></th>
   </tr>
-  {{#if item.type == 'trait'}}
-    {{#each items as |item|}}
-  {{/if}}
+  {{#each items as |item|}}
     <tr>
       <td>
         <div class="data-field clickable-open" data-open-item="{{item._id}}"></div>
@@ -16,20 +14,20 @@
           <input
             type="text"
             name="item.name"
-            data-item-id="{{item._id}}"
-            data-update-item="name"
+            data-trait-id="{{item._id}}"
+            data-update-trait="name"
             value="{{ifThen (eq item.name 'EMPTY_ITEM_NAME') '' item.name}}"
           />
         </div>
       </td>
       <td>
-        <div class="data-field clickable-delete" data-delete-item="{{item._id}}"></div>
+        <div class="data-field clickable-delete" data-delete-trait="{{item._id}}"></div>
       </td>
     </tr>
   {{/each}}
   <tr>
     <td colspan="5">
-      <div class="data-field clickable-block" style="text-align: center;" data-create-item="custom"></div>
+      <div class="data-field clickable-block" style="text-align: center;" data-create-trait="trait"></div>
     </td>
   </tr>
 </table>

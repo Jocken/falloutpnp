@@ -19,7 +19,7 @@ export default class TraitSheet extends ItemSheet {
   }
 
   activateListeners(html) {
-    html.find('[data-update-item]').change(this.onUpdateItem.bind(this))
+    html.find('[data-update-trait]').change(this.onUpdateItem.bind(this))
   }
 
   async onUpdateItem(event) {

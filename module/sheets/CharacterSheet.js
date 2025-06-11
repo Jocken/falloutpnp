@@ -42,6 +42,13 @@ export default class CharacterSheet extends ActorSheet {
     html.find('[data-create-item]').click(this.onCreateItem.bind(this))
     html.find('[data-update-item]').change(this.onUpdateItem.bind(this))
     html.find('[data-open-item]').click(this.onOpenItem.bind(this))
+
+    // Traits
+    html.find('[data-delete-trait]').click(this.onDeleteItem.bind(this))
+    html.find('[data-create-trait]').click(this.onCreateItem.bind(this))
+    html.find('[data-update-trait]').change(this.onUpdateItem.bind(this))
+    html.find('[data-open-trait]').click(this.onOpenItem.bind(this))
+
   }
 
   // TODO: Implement critical success.

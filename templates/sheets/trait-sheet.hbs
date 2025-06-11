@@ -13,8 +13,8 @@
             <input
               type="text"
               name="item.name"
-              data-item-id="{{item._id}}"
-              data-update-item="name"
+              data-trait-id="{{item._id}}"
+              data-update-trait="name"
               value="{{ifThen (eq item.name 'EMPTY_ITEM_NAME') '' item.name}}"
             />
             <div class="undertext">Name</div>
@@ -26,8 +26,8 @@
           <div class="relative">
             <textarea
               name="item.system.description"
-              data-item-id="{{item._id}}"
-              data-update-item="system.description"
+              data-trait-id="{{item._id}}"
+              data-update-trait="system.description"
               style="min-height: 6rem; resize: none"
             >{{item.system.description}}</textarea>
             {{!-- TODO: Fix positioning on notes in textarea --}}
