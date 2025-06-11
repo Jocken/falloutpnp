@@ -5,7 +5,7 @@
   "license": "LICENSE.md",
   "version": "0.1.0",
   "compatibility": {
-    "minimum": "11",
+    "minimum": "12",
     "verified": "12",
     "maximum": "13"
   },
@@ -39,7 +39,7 @@
     "units": "m"
 },
   "primaryTokenAttribute": "hp",
-  "url": "https://github.com/FedorFadeev/falloutpnp",
+  "url": "https://github.com/Jocken/falloutpnp",
   "manifest": "https://raw.githubusercontent.com/Jocken/falloutpnp/main/system.json",
   "download": "https://github.com/Jocken/falloutpnp/archive/refs/heads/main.zip",
   "initiative": "@sequence"
