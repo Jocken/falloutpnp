@@ -179,6 +179,7 @@
         },
         "armor": {
           "baseAc": 0,
+          "isEquipped": false,
           "helmet": {
             "name": "",
             "ac": 0,
