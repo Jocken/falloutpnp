@@ -1,7 +1,8 @@
 <h2>Traits</h2>
 <table>
-  {{#each items as |item|}}
+  {{#each this.actor.itemTypes.trait as |item|}}
     <tr>
+
       <td>
         <div class="data-field clickable-open" data-open-trait="{{item._id}}"></div>
       </td>
@@ -16,6 +17,7 @@
           />
         </div>
       </td>
+
       <td>
         <div class="data-field clickable-delete" data-delete-trait="{{item._id}}"></div>
       </td>

@@ -14,6 +14,7 @@ export default class CharacterSheet extends ActorSheet {
     const data = super.getData()
     data.system = data.data.system
     data.config = CONFIG.falloutpnp
+
     return data
   }
 
