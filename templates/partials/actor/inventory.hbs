@@ -47,7 +47,6 @@
     <th><p>Qty</p></th>
     <th></th>
   </tr>
-  {{#unless (noteq item.type 'trait')}}
   {{#each items as |item|}}
     <tr>
       <td>
@@ -93,7 +92,6 @@
       </td>
     </tr>
   {{/each}}
-  {{/unless}}
   <tr>
     <td colspan="5">
       <div class="data-field clickable-block" style="text-align: center;" data-create-item="custom"></div>
