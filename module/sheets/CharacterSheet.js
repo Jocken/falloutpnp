@@ -45,7 +45,7 @@ export default class CharacterSheet extends ActorSheet {
 
     // Traits
     html.find('[data-delete-trait]').click(this.onDeleteItem.bind(this))
-    html.find('[data-create-trait]').click(this.onCreateItem.bind(this))
+    html.find('[data-create-trait]').click(this.onCreateTrait.bind(this))
     html.find('[data-update-trait]').change(this.onUpdateItem.bind(this))
     html.find('[data-open-trait]').click(this.onOpenItem.bind(this))
 
@@ -149,6 +149,16 @@ export default class CharacterSheet extends ActorSheet {
     )
     const itemNameInputs = this.form.querySelectorAll('input[name="item.name"]')
     itemNameInputs[itemNameInputs.length - 1].focus()
+  }
+
+  async onCreateTrait(event) {
+    await Item.create(
+      {
+        name: 'EMPTY_TRAIT_NAME',
+        type: 'trait',
+      },
+      { parent: this.actor }
+    )
   }
 
   onDeleteItem(event) {
