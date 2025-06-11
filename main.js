@@ -42,7 +42,6 @@ Hooks.once('init', () => {
 
 Hooks.on('ready', function () {
   Handlebars.registerHelper('eq', (a, b) => a == b)
+  Handlebars.registerHelper('noteq', (a, b) => a != b)
   Handlebars.registerHelper('array', (...args) => [...args].slice(0, -1))
-  Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {return (arg1 == arg2) ? options.fn(this) : options.inverse(this);})
-  Handlebars.registerHelper('ifNotEqual', function(arg1, arg2, options) {return (arg1 != arg2) ? options.fn(this) : options.inverse(this);})
 })
