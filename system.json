@@ -34,9 +34,9 @@
       "path": "lang/en.json"
     }
   ],
-interface GridData {
-    distance: 1;
-    units: "m";
+"grid": {
+    "distance": 1,
+    "units": "m"
 },
   "primaryTokenAttribute": "hp",
   "url": "https://github.com/FedorFadeev/falloutpnp",
