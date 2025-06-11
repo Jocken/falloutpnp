@@ -33,6 +33,7 @@ export class CustomActor extends Actor {
     secondary.hpPerLevel = 3 + Math.floor(special.end.total / 2)
     secondary.spPerLevel = 5 + special.int.total * 2
     secondary.actionPoints = 5 + Math.floor(special.agi.total / 2)
+    this.system.carryWeight = 25 + Math.floor(25 * special.str.total)
   }
 
   setSkills() {
